@@ -19,26 +19,14 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#1f3a5f">
-<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}picture{display:contents}
+picture source{display:none}
+.hero .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:75% 50%}
+</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "ARCH Relief LLC",
-  "alternateName": "ARCH Relief · Asset Resolution & Curative Help",
-  "description": "Twin Cities real estate company that buys Minnesota properties held up by probate, tax forfeiture or title problems.",
-  "url": "https://www.archrelief.org/", "logo": "https://www.archrelief.org/favicon-512.png", "image": "https://www.archrelief.org/img/share.jpg",
-  "telephone": "+1-763-313-8891",
-  "email": "support@archrelief.org",
-  "address": {"@type": "PostalAddress", "streetAddress": "601 Carlson Parkway, Suite 1050", "addressLocality": "Minnetonka", "addressRegion": "MN", "postalCode": "55305", "addressCountry": "US"},
-  "areaServed": ["Hennepin County, MN", "Ramsey County, MN", "Twin Cities, MN", "Minnesota"],
-  "founder": {"@type": "Person", "name": "Daniel Minor", "jobTitle": "Managing Principal"},
-  "sameAs": ["https://maps.app.goo.gl/ZhwwcrSNrS9Mg8Wb8", "https://www.facebook.com/profile.php?id=61591232447548", "https://www.instagram.com/archreliefllc/", "https://www.linkedin.com/company/arch-relief-llc/"]
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "@id": "https://www.archrelief.org/#business", "name": "ARCH Relief", "legalName": "ARCH Relief LLC", "alternateName": "ARCH Relief · Asset Resolution & Curative Help", "description": "Twin Cities real estate company that buys Minnesota properties held up by probate, tax forfeiture or title problems.", "url": "https://www.archrelief.org/", "logo": "https://www.archrelief.org/favicon-512.png", "image": "https://www.archrelief.org/img/share.jpg", "telephone": "+1-763-313-8891", "email": "support@archrelief.org", "address": {"@type": "PostalAddress", "streetAddress": "601 Carlson Parkway, Suite 1050", "addressLocality": "Minnetonka", "addressRegion": "MN", "postalCode": "55305", "addressCountry": "US"}, "areaServed": [{"@type": "AdministrativeArea", "name": "Hennepin County, Minnesota"}, {"@type": "AdministrativeArea", "name": "Ramsey County, Minnesota"}, {"@type": "AdministrativeArea", "name": "Minneapolis, Minnesota"}, {"@type": "AdministrativeArea", "name": "St. Paul, Minnesota"}, {"@type": "AdministrativeArea", "name": "Plymouth, Minnesota"}, {"@type": "AdministrativeArea", "name": "Twin Cities metropolitan area"}], "founder": {"@id": "https://www.archrelief.org/about/#daniel"}, "sameAs": ["https://maps.app.goo.gl/ZhwwcrSNrS9Mg8Wb8", "https://www.facebook.com/profile.php?id=61591232447548", "https://www.instagram.com/archreliefllc/", "https://www.linkedin.com/company/arch-relief-llc/"]}</script>
 <style>
 /* Layout: local-first editorial. Full-bleed Stone Arch Bridge hero, white and cream bands,
    one Trust Blue band (contact), Deep Blue footer. Square corners, hairlines, one gold rule per key division.
@@ -116,10 +104,10 @@ p{margin:0}
 
 /* Hero */
 .hero{position:relative;background:var(--arch-navy-deep);color:var(--arch-white);overflow:hidden}
-.hero > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:75% 50%}
+.hero .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:75% 50%}
 .hero::before{content:"";position:absolute;inset:0;background:var(--overlay);z-index:1}
 .hero .wrap,.hero-foot{z-index:2}
-@media (max-width:640px){.hero::before{background:rgba(22,41,74,.74)}.hero > img{object-position:85% 50%}}
+@media (max-width:640px){.hero::before{background:rgba(22,41,74,.74)}.hero .hero-bg{object-position:85% 50%}}
 .hero .wrap{position:relative;padding-block:clamp(64px,10vw,128px) clamp(40px,6vw,72px);display:flex;flex-direction:column;gap:var(--space-5)}
 .hero .eyebrow{display:flex;align-items:center;gap:var(--space-3)}
 .hero h1{color:var(--arch-white);font-size:clamp(36px,5.4vw,64px);line-height:1.08;max-width:15ch;letter-spacing:-.005em}
@@ -415,7 +403,7 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
       <a class="link" href="/#how">How It Works</a>
       <a class="link" href="/#team">Our Team</a>
       <a class="link" href="/#faq">FAQ</a>
-      <a class="phone" href="tel:+17633138891" aria-label="Call (763) 313-8891"><svg class="ph-icon" aria-hidden="true"><use href="/#i-phone"/></svg><strong>(763) 313-8891</strong><span>Mon–Fri · Twin Cities</span></a>
+      <a class="phone" href="tel:+17633138891" aria-label="Call (763) 313-8891"><svg class="ph-icon" aria-hidden="true"><use href="#i-phone"/></svg><strong>(763) 313-8891</strong><span>Mon–Fri · Twin Cities</span></a>
       <a class="btn btn-primary" href="#contact">Talk With Us</a>
       <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </nav>
@@ -437,6 +425,7 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
   <section class="page-hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> · Inherited property</nav>
+      <p class="crumbs" style="margin-top:-12px">Last updated October 25, 2026</p>
       <h1>Inherited a Minnesota house that&#x27;s stuck?</h1>
       <p class="lead">When a parent or relative passes away, the house often sits in their name for months or years. ARCH Relief buys inherited properties in the Twin Cities and across Minnesota, and we coordinate the probate and title work with licensed attorneys so the family doesn&#x27;t have to.</p>
       <div class="cta-row">
@@ -468,7 +457,7 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
         <h2>What usually has to happen</h2>
       </div>
       <div class="prose"><p>Before an inherited house can be sold, someone needs the legal authority to sell it and the heirs need to be identified. In Minnesota that usually happens through probate or another court process, handled by a licensed attorney. Any back taxes, liens or old mortgages are typically paid off at closing.</p>
-<p>You don&#x27;t need to have any of this figured out before you call us. Sorting it out is the work we coordinate.</p><p style="font-size:13px">This is general information, not legal advice. For advice about your situation, talk with a licensed Minnesota attorney.</p></div>
+<p>You don&#x27;t need to have any of this figured out before you call us. Sorting it out is the work we coordinate.</p><p class="related-links">If property taxes have also fallen behind, see <a href="/tax-forfeiture/">behind on property taxes</a>. If only some heirs are ready to sell, see <a href="/sell-your-share/">selling your share</a>, and if a deed or old lien is in the way, see <a href="/title-problems/">title problems</a>.</p><p style="font-size:13px">This is general information, not legal advice. For advice about your situation, talk with a licensed Minnesota attorney.</p></div>
     </div>
   </section>
 
@@ -517,7 +506,7 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
           <li><svg><use href="#i-mail"/></svg><div><span class="k">Email</span><a class="v" href="mailto:support@archrelief.org">support@archrelief.org</a></div><button class="copy-btn" type="button" data-copy="support@archrelief.org">Copy</button></li>
           <li><svg><use href="#i-pin"/></svg><div><span class="k">Business address</span><span class="v">601 Carlson Parkway, Suite 1050, Minnetonka, MN 55305</span></div></li>
         </ul>
-        <figure class="contact-figure"><img class="contact-photo" src="/img/carlson-towers.jpg" alt="Carlson Towers in Minnetonka at sunset" width="1400" height="978" loading="lazy"><figcaption>Carlson Towers, Minnetonka. We meet clients here by appointment.</figcaption></figure>
+        <figure class="contact-figure"><picture><source type="image/webp" srcset="/img/carlson-towers.webp"><img class="contact-photo" src="/img/carlson-towers.jpg" alt="Carlson Towers in Minnetonka at sunset" width="1400" height="978" loading="lazy"></picture><figcaption>Carlson Towers, Minnetonka. We meet clients here by appointment.</figcaption></figure>
       </div>
       <form class="form" id="contactForm" novalidate>
         <h3>Request a confidential review</h3>
@@ -577,6 +566,7 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
         <a href="/tax-forfeiture/">Tax forfeiture</a>
         <a href="/title-problems/">Title problems</a>
         <a href="/sell-your-share/">Selling your share</a>
+        <a href="/about/">About us</a>
         <a href="/#situations">Situations</a>
         <a href="/#how">How It Works</a>
         <a href="/#team">Our Team</a>
@@ -594,8 +584,8 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
 </footer>
 
 <nav class="callbar" aria-label="Contact ARCH Relief">
-  <a href="tel:+17633138891"><svg aria-hidden="true"><use href="/#i-phone"/></svg>Call</a>
-  <a href="sms:+17633138891"><svg aria-hidden="true"><use href="/#i-mail"/></svg>Text</a>
+  <a href="tel:+17633138891"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a href="sms:+17633138891"><svg aria-hidden="true"><use href="#i-mail"/></svg>Text</a>
   <a class="primary" href="#contact">Request a review</a>
 </nav>
 

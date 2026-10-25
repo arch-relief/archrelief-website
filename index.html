@@ -343,6 +343,20 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
 
 .sit .more{margin-top:auto;padding-top:var(--space-2);font-size:14px;font-weight:600;display:inline-flex;gap:8px;align-items:center;text-decoration:none}
 .sit .more svg{width:16px;height:16px;color:currentColor}
+
+/* Market gap */
+.gap-band{background:var(--arch-navy-deep);color:var(--arch-white)}
+.gap-band .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:var(--space-8);align-items:start}
+.gap-band h2{color:var(--arch-white);font-size:clamp(28px,3.4vw,40px);line-height:1.15}
+.gap-band p{color:rgba(255,255,255,.86)}
+.gap-band a{color:var(--arch-gold)}
+.gap-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.18)}
+.gap-list li{padding:var(--space-4) 0;border-bottom:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;gap:4px}
+.gap-list strong{color:var(--arch-white);font-family:var(--font-display);font-size:19px;font-weight:700}
+.gap-list span{color:rgba(255,255,255,.8);font-size:15px}
+.gap-copy{display:flex;flex-direction:column;gap:var(--space-4)}
+.person-copy blockquote{margin:var(--space-2) 0;padding:var(--space-2) 0 var(--space-2) var(--space-5);border-left:2px solid var(--arch-gold);font-family:var(--font-display);font-size:19px;line-height:1.55;color:var(--arch-navy)}
+@media (max-width:1100px){.gap-band .wrap{grid-template-columns:minmax(0,1fr);gap:var(--space-6)}}
 </style>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ARCH Relief", "url": "https://www.archrelief.org/", "publisher": {"@id": "https://www.archrelief.org/#business"}}</script>
@@ -478,6 +492,20 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
     </div>
   </section>
 
+  <!-- Market gap -->
+  <section class="section gap-band" id="why">
+    <div class="wrap">
+      <div class="gap-copy">
+        <span class="label on-dark">Why we exist</span>
+        <h2>Families who had no options now have one.</h2>
+      </div>
+      <div class="gap-copy">
+        <p>Heirs who can't agree, owners of a fractional share, houses stuck in title or tax trouble: for a long time, many of these Minnesota families had nowhere to turn, because a traditional sale needs clear title and every owner on board. ARCH Relief buys these properties, including a single owner's share, with every term in writing.</p>
+        <p><a href="/about/#why">Read why ARCH Relief exists</a></p>
+      </div>
+    </div>
+  </section>
+
   <!-- How it works -->
   <section class="section" id="how">
     <div class="wrap">
@@ -556,7 +584,7 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
           <span class="label">A recent project</span>
           <h2>A St. Paul home, back in use.</h2>
         </div>
-        <p>A home Daniel purchased and renovated in St. Paul. This is the part of the work most people never see: a house that was held up becomes a place someone lives again.</p>
+        <p>A home ARCH Relief purchased and renovated in St. Paul. This is the part of the work most people never see: a house that was held up becomes a place someone lives again.</p>
       </div>
       <div class="gallery">
         <figure><picture><source type="image/webp" srcset="/img/stpaul-exterior.webp"><img src="/img/stpaul-exterior.jpg" alt="Front of a renovated rambler-style home in St. Paul in autumn" width="1600" height="1200" loading="lazy"></picture><figcaption>St. Paul, MN</figcaption></figure>

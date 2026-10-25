@@ -366,6 +366,20 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
 .related{display:flex;flex-wrap:wrap;gap:var(--space-3)}
 @media (max-width:1100px){.two{grid-template-columns:minmax(0,1fr);gap:var(--space-6)}.help{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.seen,.help{grid-template-columns:minmax(0,1fr)}.seen li:nth-child(odd){padding-right:0}}
+
+/* Market gap */
+.gap-band{background:var(--arch-navy-deep);color:var(--arch-white)}
+.gap-band .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:var(--space-8);align-items:start}
+.gap-band h2{color:var(--arch-white);font-size:clamp(28px,3.4vw,40px);line-height:1.15}
+.gap-band p{color:rgba(255,255,255,.86)}
+.gap-band a{color:var(--arch-gold)}
+.gap-list{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.18)}
+.gap-list li{padding:var(--space-4) 0;border-bottom:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;gap:4px}
+.gap-list strong{color:var(--arch-white);font-family:var(--font-display);font-size:19px;font-weight:700}
+.gap-list span{color:rgba(255,255,255,.8);font-size:15px}
+.gap-copy{display:flex;flex-direction:column;gap:var(--space-4)}
+.person-copy blockquote{margin:var(--space-2) 0;padding:var(--space-2) 0 var(--space-2) var(--space-5);border-left:2px solid var(--arch-gold);font-family:var(--font-display);font-size:19px;line-height:1.55;color:var(--arch-navy)}
+@media (max-width:1100px){.gap-band .wrap{grid-template-columns:minmax(0,1fr);gap:var(--space-6)}}
 </style>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.archrelief.org/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://www.archrelief.org/about/"}]}</script>
@@ -438,9 +452,27 @@ dialog.legal::backdrop{background:rgba(22,41,74,.55)}
           <span class="label">Managing Principal</span>
           <h2 style="font-size:32px">Daniel Minor</h2>
           <p>Daniel is a Minnesota native with more than a decade in the mortgage industry, helping Twin Cities families buy and refinance their homes. He studied mathematics and computer science at Hamline University in St. Paul, graduating <em>cum laude</em>, and was named a Super Mortgage Professional by the <em>Minneapolis/St. Paul Business Journal</em> each year from 2021 to 2024.</p>
+          <p>As a loan officer, Daniel kept running into the same problems: title issues, inherited and partial ownership, and people stuck with no path forward. In his words:</p>
+          <blockquote>"For years, my mortgage work had me solving exactly these kinds of problems. I'd meet families with a title issue, an inherited house, or a share of a property they couldn't do anything with, and nobody had a way forward for them. That's what made me want to help the people and families no other company will help."</blockquote>
           <p>At ARCH Relief, he works with families whose properties are stuck in probate, tax forfeiture or title problems, and he is involved in every property from the first conversation to the closing table.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section gap-band" id="why">
+    <div class="wrap">
+      <div class="gap-copy">
+        <span class="label on-dark">Why ARCH Relief exists</span>
+        <h2>A gap in the Minnesota market.</h2>
+        <p>Selling a house the usual way generally takes clear title and every owner agreeing to sell. For a lot of Minnesota families and partial owners, that left no real option at all.</p>
+        <p>ARCH Relief was built for those situations. We buy properties that others pass on, including a single owner's share, and we put every offer in writing. If selling is the right choice, you now have a buyer.</p>
+      </div>
+      <ul class="gap-list">
+        <li><strong>Heirs who can't agree</strong><span>One relative wants to sell, another wants to keep the house, and nothing moves. See <a href="/inherited-property/">inherited property</a>.</span></li>
+        <li><strong>Owners of a fractional share</strong><span>You own part of a house but can't use it, sell it on the open market or get the others to act. See <a href="/sell-your-share/">selling your share</a>.</span></li>
+        <li><strong>Houses stuck in title or tax trouble</strong><span>A broken chain of title, an old lien or delinquent taxes keeps the property from selling. See <a href="/title-problems/">title problems</a> and <a href="/tax-forfeiture/">tax forfeiture</a>.</span></li>
+      </ul>
     </div>
   </section>
 

@@ -1,6 +1,6 @@
 # ARCH Relief website: guide drafts (NOT PUBLISHED)
 
-**Status:** Drafts for attorney review. Nothing in this folder is on archrelief.org. The live site is built only from the `main` branch; this is the `drafts` branch.
+**Status:** PUBLISHED October 25, 2026 after attorney approval. These files are the source drafts; the live pages on the main branch are now the current versions.
 
 **Prepared:** October 25, 2026, from the Minnesota statute library in ARCH's `arch-datasift-rei` plugin (`deep-prospecting-mn/references/mn-statutes/`, read through `INDEX.md` and `mn-guardrails.md`), plus Hennepin County's public pages. Statute citations are inline as "Minn. Stat. § …".
 
